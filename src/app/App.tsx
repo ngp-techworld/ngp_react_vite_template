@@ -1,7 +1,7 @@
 export function App() {
   return (
-    <main>
-      <h1>NGP React starter</h1>
+    <main className="p-6">
+      <h1 className="text-2xl font-bold text-primary">NGP React starter</h1>
     </main>
   );
 }
