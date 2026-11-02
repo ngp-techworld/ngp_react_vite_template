@@ -5,7 +5,8 @@
   },
   "errors": {
     "network": "Could not reach the server. Check your connection and try again.",
-    "generic": "Something went wrong. Please try again."
+    "generic": "Something went wrong. Please try again.",
+    "page": "This page could not be shown. Please try again."
   },
   "language": {
     "label": "Language",
@@ -17,5 +18,25 @@
     "previous": "Previous",
     "next": "Next",
     "pageOf": "Page {{page}} of {{lastPage}}"
+  },
+  "validation": {
+    "required": "This field is required.",
+    "email": "Enter a valid email address."
+  },
+  "auth": {
+    "login": {
+      "title": "Sign in",
+      "subtitle": "Enter your email and password to continue.",
+      "email": "Email",
+      "password": "Password",
+      "remember": "Remember me",
+      "submit": "Sign in"
+    },
+    "logout": "Sign out"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The link may have changed or the page was removed.",
+    "backHome": "Back to home"
   }
 }
