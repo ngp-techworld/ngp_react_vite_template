@@ -1,0 +1,8 @@
+# LF everywhere, also on Windows checkouts, so Prettier and CI agree.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.ico binary
+*.woff binary
+*.woff2 binary

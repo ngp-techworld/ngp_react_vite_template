@@ -3,5 +3,5 @@ export function App() {
     <main>
       <h1>NGP React starter</h1>
     </main>
-  )
+  );
 }
