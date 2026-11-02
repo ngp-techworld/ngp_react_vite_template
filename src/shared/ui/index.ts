@@ -6,5 +6,6 @@ export { ErrorState } from './ErrorState';
 export { LanguageSwitcher } from './LanguageSwitcher';
 export { LoadingState } from './LoadingState';
 export { Pagination } from './Pagination';
+export { SearchInput } from './SearchInput';
 export { Spinner } from './Spinner';
 export { TextField } from './TextField';

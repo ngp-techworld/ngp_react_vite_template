@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
 import { useDocumentTitle } from '@/shared/hooks/useDocumentTitle';
 import { EmptyState } from '@/shared/ui';
-import { paths } from '../paths';
+import { homePath } from '../paths';
 
 export function NotFoundPage() {
   const { t } = useTranslation();
@@ -16,7 +16,7 @@ export function NotFoundPage() {
         title={t('notFound.title')}
         description={t('notFound.description')}
         action={
-          <Link to={paths.home} className="font-semibold text-primary underline">
+          <Link to={homePath} className="font-semibold text-primary underline">
             {t('notFound.backHome')}
           </Link>
         }

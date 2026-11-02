@@ -1,7 +1,7 @@
 import { Navigate, Outlet, useLocation } from 'react-router';
 import { useMe } from '@/features/auth';
 import { LoadingState } from '@/shared/ui';
-import { paths } from '../paths';
+import { homePath } from '../paths';
 
 /** The page RequireAuth sent the user away from, if it is a path inside this app. */
 function redirectTarget(state: unknown): string {
@@ -15,7 +15,7 @@ function redirectTarget(state: unknown): string {
   ) {
     return state.from;
   }
-  return paths.home;
+  return homePath;
 }
 
 /** For /login: signed-in users (including right after logging in) go on to the app. */

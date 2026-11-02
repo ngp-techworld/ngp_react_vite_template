@@ -4,7 +4,7 @@ import { Link, Outlet } from 'react-router';
 import { useLogout, useMe } from '@/features/auth';
 import { config } from '@/shared/config';
 import { Button, LanguageSwitcher } from '@/shared/ui';
-import { paths } from '../paths';
+import { homePath } from '../paths';
 
 /** Header + page container for every signed-in page. */
 export function AppLayout() {
@@ -16,7 +16,7 @@ export function AppLayout() {
     <div className="min-h-dvh">
       <header className="border-b border-line bg-surface">
         <div className="mx-auto flex h-14 max-w-3xl items-center justify-between gap-3 px-4">
-          <Link to={paths.home} className="font-bold text-primary">
+          <Link to={homePath} className="font-bold text-primary">
             {config.appName}
           </Link>
           <div className="flex items-center gap-1">

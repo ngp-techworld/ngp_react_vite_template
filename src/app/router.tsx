@@ -4,7 +4,7 @@ import { RequireAuth } from './guards/RequireAuth';
 import { RequireGuest } from './guards/RequireGuest';
 import { AppLayout } from './layouts/AppLayout';
 import { RouteErrorPage } from './pages/RouteErrorPage';
-import { paths } from './paths';
+import { homePath, paths } from './paths';
 
 /**
  * All routes of the app. Every page is lazy-loaded (its own JS chunk); guards and layouts are not.
@@ -15,7 +15,7 @@ export const routes: RouteObject[] = [
     errorElement: <RouteErrorPage />,
     hydrateFallbackElement: <LoadingState className="min-h-dvh" />,
     children: [
-      { path: '/', element: <Navigate to={paths.home} replace /> },
+      { path: '/', element: <Navigate to={homePath} replace /> },
       {
         element: <RequireGuest />,
         children: [
@@ -32,7 +32,14 @@ export const routes: RouteObject[] = [
         children: [
           {
             element: <AppLayout />,
-            children: [],
+            children: [
+              {
+                path: paths.items,
+                lazy: async () => ({
+                  Component: (await import('@/features/items/pages/ItemsPage')).ItemsPage,
+                }),
+              },
+            ],
           },
         ],
       },

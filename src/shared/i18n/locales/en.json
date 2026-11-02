@@ -38,5 +38,28 @@
     "title": "Page not found",
     "description": "The link may have changed or the page was removed.",
     "backHome": "Back to home"
+  },
+  "items": {
+    "title": "Items",
+    "total": "Total: {{total}}",
+    "search": {
+      "label": "Search items",
+      "placeholder": "Search by name",
+      "submit": "Search"
+    },
+    "empty": {
+      "title": "No items yet",
+      "description": "Items will show up here once they are added."
+    },
+    "noResults": {
+      "title": "No results",
+      "description": "No item matches “{{search}}”.",
+      "clear": "Clear search"
+    },
+    "pageEmpty": {
+      "title": "This page is empty",
+      "firstPage": "Go to the first page"
+    },
+    "noDescription": "No description"
   }
 }
