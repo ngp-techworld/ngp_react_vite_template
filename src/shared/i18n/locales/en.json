@@ -1,0 +1,15 @@
+{
+  "common": {
+    "loading": "Loading…",
+    "retry": "Try again"
+  },
+  "errors": {
+    "network": "Could not reach the server. Check your connection and try again.",
+    "generic": "Something went wrong. Please try again."
+  },
+  "language": {
+    "label": "Language",
+    "ar": "العربية",
+    "en": "English"
+  }
+}
