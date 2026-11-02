@@ -11,5 +11,11 @@
     "label": "Language",
     "ar": "العربية",
     "en": "English"
+  },
+  "pagination": {
+    "label": "Pagination",
+    "previous": "Previous",
+    "next": "Next",
+    "pageOf": "Page {{page}} of {{lastPage}}"
   }
 }

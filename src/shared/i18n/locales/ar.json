@@ -11,5 +11,11 @@
     "label": "اللغة",
     "ar": "العربية",
     "en": "English"
+  },
+  "pagination": {
+    "label": "التنقّل بين الصفحات",
+    "previous": "السابق",
+    "next": "التالي",
+    "pageOf": "صفحة {{page}} من {{lastPage}}"
   }
 }
