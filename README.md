@@ -55,8 +55,9 @@ build and e2e on every PR and on pushes to `dev` and `main`.
 ## API types
 
 With the Laravel starter running, `npm run api:types` writes `src/shared/api/schema.d.ts` from its
-Scramble OpenAPI document. Never edit that file by hand. Until it has been generated, `User` and
-`Item` are written by hand in `src/features/*/types.ts`; replace them with the generated types.
+Scramble OpenAPI document. Never edit that file by hand; it is committed so CI can typecheck
+without the API. Feature types re-export from it, e.g. `src/features/items/types.ts`:
+`export type Item = components['schemas']['ItemResource'];`. Regenerate after every API change.
 
 `openapi-typescript` runs through a pinned `npx` because it needs TypeScript 5 and this repo uses
 TypeScript 7 (`npm install` would fail on the peer dependency).
