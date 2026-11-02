@@ -14,7 +14,8 @@
     "lint:rtl": "node --disable-warning=ExperimentalWarning scripts/lint-rtl.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "typecheck": "tsc -b"
+    "typecheck": "tsc -b",
+    "api:types": "npx --yes openapi-typescript@7.13.0 http://127.0.0.1:8000/docs/api.json -o src/shared/api/schema.d.ts"
   },
   "dependencies": {
     "@fontsource-variable/cairo": "^5.3.0",
@@ -23,7 +24,8 @@
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-i18next": "^17.1.11",
-    "tailwind-merge": "^3.7.0"
+    "tailwind-merge": "^3.7.0",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
