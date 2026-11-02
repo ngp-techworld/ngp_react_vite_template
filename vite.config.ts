@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import { fileURLToPath } from 'node:url';
@@ -16,4 +17,10 @@ export default defineConfig({
   },
   server: { host: '127.0.0.1', port: 5173, strictPort: true, proxy: apiProxy },
   preview: { host: '127.0.0.1', port: 4173, strictPort: true, proxy: apiProxy },
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['./src/test/setup.ts'],
+    include: ['src/**/*.test.{ts,tsx}'],
+    restoreMocks: true,
+  },
 });
