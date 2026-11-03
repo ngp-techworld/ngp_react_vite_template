@@ -17,8 +17,12 @@ on `http://127.0.0.1:8000`, using the shared starter API contract with auth mode
 
 ## Run locally
 
-Requirements: Node 22.22+ and npm. For real data, the Laravel starter running on
-`http://127.0.0.1:8000` (`php artisan migrate --seed && php artisan serve` in that repo).
+Requirements: Node 24 LTS at its latest patch, at least 24.22.2, and npm. `.npmrc` sets
+`engine-strict`, so npm refuses older Node releases (they have known security issues); raise the
+floor in `package.json` `engines` when a new Node security release comes out.
+
+For real data, run the Laravel starter on `http://127.0.0.1:8000`
+(`php artisan migrate --seed && php artisan serve` in that repo).
 
 ```bash
 npm ci
